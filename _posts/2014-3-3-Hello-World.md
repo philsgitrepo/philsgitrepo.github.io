@@ -9,7 +9,7 @@ Hope you will find wisdom in these lines and wishing you all the best.
 regards,
 cloudhermes
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+
 
 ## Making SOAP API calls via action scripts fom VMware vRO 7.4
 
