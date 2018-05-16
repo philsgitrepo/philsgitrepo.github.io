@@ -14,6 +14,7 @@ cloudhermes
 ## Making SOAP API calls via action scripts fom VMware vRO 7.4
 
 //** Declare Soap host and get operation, in the original workflow this is set as an input or even attribute. **
+
 var soaphost = Server.findForType("SOAP:Host" , "xx-xx-xx-xx");
 if (soaphost == null) throw "SoapHost 'xx-xx-xx-xx' not found!";
 
@@ -24,6 +25,7 @@ if (operation == null) throw "Operation 'GetAttributeSelectionsByName' not found
 //*I copied the code from existing workflow to to do this. You will need to adjust or declare extra attributes or variables as there are no output parameters and attributes in a scripting action. 
 
 //** invokeSoapOperation**
+
 actionResult = System.getModule("com.vmware.library.soap").invokeSOAPOperation(operation,header,parameter,attribute) ;
 
 //process the result. please note if you read the original action script"("com.vmware.library.soap").invokeSOAPOperation" it returns a property with 2 hashes in it. SOAP_OUT_HEADERS and SOAP_OUT_PARAMETERS
